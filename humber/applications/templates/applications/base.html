@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+    <title>{% block title %}Humber College{% endblock title %}</title>
+
+{% load staticfiles %}
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'applications/media.base.css' %}">
+</head>
+<body>
+
+<nav class="humberusernavbar navbar navbar-inverse" style = "background-color:rgb(69, 102, 142); border: none;">
+    <div class="container-fluid">
+
+        <!-- Logo -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#UserNavBar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="{% url 'applications:index' %}" class="navbar-brand"><img class = "img-responsive" src="{% static 'applications/media/logo.jpg' %}" width="160" height="90";></a>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="collapse navbar-collapse" id="UserNavBar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style = "color:white">Markets <span class="caret"></span></a>
+                        <ul class="dropdown-menu" style = "background-color:rgb(69, 102, 142); border: none">
+                            <li><a href="#" style=" color: white">Alexander</a></li>
+                            <li><a href="#" style=" color: white">Amanda</a></li>
+                            <li><a href="#" style=" color: white">Linda</a></li>
+                        </ul>
+                    </li>
+            </ul>
+
+            <!--form-->
+    <form class="navbar-form navbar-left" role="search">
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+    </div>
+
+    </form>
+
+
+        <!-- Logout button -->
+            <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">
+                        <form method="post" action="{% url 'accounts:logout' %}">
+                            {% csrf_token %}
+                            <input type="submit" value="Logout">
+                            <input type="hidden" name="next" value="{{ next }}">
+                        </form>
+                    </a></li>
+            </ul>
+
+            <!-- Add New Agent -->
+            <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" style = "color:white" >Add New Agent</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+    <div class="container-fluid">
+
+<!-- Leftsidebar -->
+    <div class="col-md-3 col-lg-3 border-right-0">
+
+        <ul class="humberuserleftsidemenu">
+<li><a href="#">New Agents</a></li><br>
+<li><a href="#">Approved</a></li><br>
+<li><a href="#">Not Approved</a></li><br>
+<li><a href="#">Cancelled</a></li><br>
+<li><a href="#">View All</a></li><br>
+        </ul>
+
+        </div>
+
+<!-- Main content goes here -->
+
+<div class=" body col-md-9 col-lg-9">
+{% block content %}
+{% endblock %}
+</div>
+
+    </div>
+
+</body>
+</html>

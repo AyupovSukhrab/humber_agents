@@ -1,0 +1,109 @@
+html {
+
+margin:0; padding:0;
+width:100%;
+min-height: 100%;
+position:relative;
+}
+
+body {
+        min-height: 100%;
+        margin:0; padding:0;
+
+    }
+
+img.BackgroundImage {
+background-size: cover;
+background-repeat: no-repeat;
+position:absolute;
+width: 100%;
+height: 100%;
+padding:0;
+margin:0;
+
+}
+
+header.Login {
+    position:relative;
+    height:100px;
+    margin:0;
+    padding:0;
+    background-color: rgb(69, 102, 142);
+    font-size: 200%;
+    color: white;
+    font-style: bold;
+    border-radius: 5px;
+
+}
+
+img.LoginHeaderLogo {
+    height: 90%;
+    width: 10%;
+    position:relative;
+    padding: 0;
+    left: 3%;
+    float: left;
+    clear: none;
+}
+p1.Login {
+    padding:0;
+    max-width: 50%;
+    position:relative;
+    top: 30%;
+    left: 3%;
+
+
+}
+div.Login {
+    position:relative;
+    max-width: 30%;
+    left:35%;
+    top:150px;
+    margin:0;
+    padding;0;
+    border-radius: 5px;
+
+}
+
+
+form.Login {
+    text-align: center;
+    margin:0;
+    padding:0;
+}
+td {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color:rgb(69, 102, 142);
+    opacity: 0.8;
+    border-color:none;
+    text-decoration-color: white;
+
+}
+
+.credentials {
+    background-color: red;
+
+}
+
+a.LogIn {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color:rgb(69, 102, 142);
+    border-color:none;
+    color: white;
+    text-decoration:none;
+    text-align:center;
+}
+
+h5 {
+    color: red;
+   }

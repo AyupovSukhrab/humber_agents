@@ -1,0 +1,15 @@
+{% extends 'applications/base.html' %}
+{% block content %}
+    <h1>List of agents</h1>
+    {% if agent_list %}
+    <ul>
+    {% for agent in agent_list %}
+        <li> <a href="{% url 'applications:detail' agent.id %}">{{ agent.agent_name }} </a></li>
+        {% endfor %}
+    </ul>
+    {% else %}
+        <h1>No agents to be displayed</h1>
+    {% endif %}
+
+
+{% endblock %}
