@@ -82,7 +82,7 @@ DATABASES = {
         'NAME': 'urban_prod',
         'USER': 'u_urban',
         'PASSWORD': 'Sukhrab1994',
-        'HOST': 'localhost',
+        'HOST': '178.128.229.55',
         'PORT': '',
     }
 }
@@ -128,4 +128,4 @@ STATIC_URL = '/static/'
 LOGIN_URL = 'accounts:login'
 LOGOUT_URL = 'accounts:logged_out'
 
-ALLOWED_HOSTS = ['178.128.229.55', 'localhost', '127.0.0.1']
+
