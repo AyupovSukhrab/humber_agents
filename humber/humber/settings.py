@@ -25,7 +25,7 @@ SECRET_KEY = 'SECRET_KEY'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['178.128.229.55', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -82,7 +82,7 @@ DATABASES = {
         'NAME': 'urban_prod',
         'USER': 'u_urban',
         'PASSWORD': 'Sukhrab1994',
-        'HOST': '178.128.229.55',
+        'HOST': 'localhost',
         'PORT': '',
     }
 }
