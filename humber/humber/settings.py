@@ -79,9 +79,9 @@ WSGI_APPLICATION = 'humber.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'urban_prod',
-        'USER': 'u_urban',
-        'PASSWORD': 'Sukhrab1994',
+        'NAME': 'sukhrab_prod',
+        'USER': 'sukhrab',
+        'PASSWORD': 'World2563605',
         'HOST': 'localhost',
         'PORT': '',
     }
